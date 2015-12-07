@@ -81,7 +81,21 @@ public class Main {
         System.out.println(ex8Word);
 
         //Ex 9
-        //String ex9Word = words.stream().
+        String ex9Word = words.stream().collect(Collectors.joining(", "));
+
+        System.out.println(ex9Word);
+
+
+        //Ex 10
+        List<Double> doubleList = StreamUtils.randomNumberList(10);
+        doubleList.stream().forEach(d -> System.out.println(d));
+
+        //Ex 11
+        List<Integer> integerList = StreamUtils.orderedNumberList(0, 13, 12);
+        System.out.println(integerList);
+
     }
+
+
 }
 
